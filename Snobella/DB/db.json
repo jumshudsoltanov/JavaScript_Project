@@ -1,4 +1,11 @@
 {
-   "users": []
-
+  "users": [
+    {
+      "id": "2e02",
+      "fullname": "Jumshud Soltanov",
+      "username": "jumshud",
+      "email": "soltanovc56@gmail.com",
+      "password": "1234"
+    }
+  ]
 }
