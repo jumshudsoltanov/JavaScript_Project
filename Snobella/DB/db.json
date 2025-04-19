@@ -6,6 +6,13 @@
       "username": "jumshud",
       "email": "soltanovc56@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "914e",
+      "fullname": "Revan Huseynli",
+      "username": "revan12",
+      "email": "revan@example.com",
+      "password": "1234"
     }
   ]
 }
