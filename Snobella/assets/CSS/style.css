@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* !================= Register && Login ============================= */
+:root { 
+    --primary-color: #F75145;
+   
+}
+
+html {
+    font-family: poppiuns, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.container h1 {
+    margin-top: 30px;
+}
+
+.form-group  {
+
+    margin-bottom: 15px;
+    padding: 20px 20px;
+    width: 100%;
+    margin-left: 70px;
+}
+.form-group label {
+   margin-top: 20px;
+}
+
+
+.form-group input {
+    width: 700px;
+    height: 52px;
+    margin-top: 20px;
+
+}
+
+.register-btn {
+    width: 700px;
+    height: 52px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--primary-color);
+
+}
+.register-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+
+/* ! ===========Responsive================  */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .form-group input,
+    .register-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+    }
+
+    .form-group {
+        margin-left: 0;
+    }
+
+    .form-group input,
+    .register-btn {
+        font-size: 14px; 
+        height: 45px;
+    }
+}
