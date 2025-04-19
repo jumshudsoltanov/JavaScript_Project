@@ -68,6 +68,15 @@ html {
     font-size: 25px;
 }
 
+
+.register-text {
+    font-size: 20px;
+    font-family: pooppins, sans-serif;
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+}
+
 /* ! ===========Responsive================  */
 @media (max-width: 768px) {
     .container {
