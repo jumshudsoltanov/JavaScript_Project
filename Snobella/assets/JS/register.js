@@ -42,6 +42,9 @@ sendBtn.addEventListener("click", async (e) => {
           username: usernameValue,
           email: emailValue,
           password: passwordValue,
+          login: false,
+          wisshList: [],
+          cart: [],
         }),
       });
 
@@ -49,6 +52,7 @@ sendBtn.addEventListener("click", async (e) => {
         const data = await response.json();
         console.log("İstifadəçi uğurla əlavə olundu:", data);
         alert("Qeydiyyat uğurla tamamlandı!");
+        window.location.href = "login.html";
       } else {
         alert("Xəta baş verdi: " + response.statusText);
       }

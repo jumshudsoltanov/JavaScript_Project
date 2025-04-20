@@ -13,10 +13,19 @@ sendBtn.addEventListener("click", async (e) => {
   const user = users.find(
     (user) => user.email === emailValue && user.password === passwordValue
   );
+
   if (user) {
-    alert("Giris Uğurlu!");
+    alert("Giriş Uğurlu!");
+    await fetch(`http://localhost:3000/users/${user.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ login: true }),
+    });
+
     window.location.href = "home.html";
   } else {
-    alert("Parol veya email yanlis!");
+    alert("Parol və ya email yanlışdır!");
   }
 });

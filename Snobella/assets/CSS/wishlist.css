@@ -1,0 +1,24 @@
+
+.product-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.price-box .btn {
+  width: 100%;
+}
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.color-dot.active {
+  border-color: #000;
+}
+.color-orange { background-color: #c66b00; }
+.color-blue { background-color: #1e90ff; }
+.color-green { background-color: #32cd32; }
+.color-pink { background-color: #ff1493; }
