@@ -1,6 +1,6 @@
 const productsContainer = document.getElementById("products");
 
-const api = "http://localhost:3000";
+const api = "http://localhost:3616";
 
 async function getCurrentUser() {
   const res = await fetch(`${api}/users`);

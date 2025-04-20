@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!id) return console.error('Product ID is missing');
   
     try {
-      const response = await fetch(`http://localhost:3000/products/${id}`);
+      const response = await fetch(`http://localhost:3616/products/${id}`);
       if (!response.ok) throw new Error('Məhsul tapılmadı');
       const product = await response.json();
   

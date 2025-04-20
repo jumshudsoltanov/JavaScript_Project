@@ -15,7 +15,7 @@ sendBtn.addEventListener("click", async (e) => {
   const passwordValue = password.value;
 
 
-  const dbData = await fetch("http://localhost:3000/users");
+  const dbData = await fetch("http://localhost:3616/users");
   const users = await dbData.json();
 
 
@@ -32,7 +32,7 @@ sendBtn.addEventListener("click", async (e) => {
   }
   else {
     try {
-      const response = await fetch("http://localhost:3000/users", {
+      const response = await fetch("http://localhost:3616/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

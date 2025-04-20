@@ -7,7 +7,7 @@ sendBtn.addEventListener("click", async (e) => {
   const emailValue = email.value;
   const passwordValue = password.value;
 
-  const dbData = await fetch("http://localhost:3000/users");
+  const dbData = await fetch("http://localhost:3616/users");
   const users = await dbData.json();
 
   const user = users.find(
@@ -16,7 +16,7 @@ sendBtn.addEventListener("click", async (e) => {
 
   if (user) {
     alert("Giriş Uğurlu!");
-    await fetch(`http://localhost:3000/users/${user.id}`, {
+    await fetch(`http://localhost:3616/users/${user.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

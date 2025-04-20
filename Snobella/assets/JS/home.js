@@ -1,11 +1,11 @@
 async function getLoggedInUser() {
-  const res = await fetch("http://localhost:3000/users");
+  const res = await fetch("http://localhost:3616/users");
   const users = await res.json();
   return users.find(user => user.login === true);
 }
 
 async function updateUserData(user) {
-  await fetch(`http://localhost:3000/users/${user.id}`, {
+  await fetch(`http://localhost:3616/users/${user.id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
@@ -13,7 +13,7 @@ async function updateUserData(user) {
 }
 
 async function fetchAndRenderProducts() {
-  const res = await fetch("http://localhost:3000/products");
+  const res = await fetch("http://localhost:3616/products");
   const products = await res.json();
   const container = document.querySelector(".productContainer");
   container.innerHTML = "";
