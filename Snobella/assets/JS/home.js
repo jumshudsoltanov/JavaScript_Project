@@ -9,7 +9,7 @@ async function fetchProducts() {
     console.log("Fetched product list:", productList);
  
     const productContainer = document.querySelector(".productContainer");
-  
+  //
     productList.forEach((product) => {
       const card = document.createElement("div");
       card.className = "card";
